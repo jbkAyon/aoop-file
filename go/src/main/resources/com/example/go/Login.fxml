@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefWidth="600.0" prefHeight="400.0"
+            xmlns="http://javafx.com/javafx/17.0.2"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.go.LoginController" stylesheets="@styles.css" styleClass="auth-container">
+    <children>
+        <VBox spacing="16.0" alignment="CENTER"
+              prefWidth="600.0" prefHeight="400.0" styleClass="auth-panel">
+            <children>
+                <Label text="Login" styleClass="auth-title">
+                </Label>
+
+                <GridPane hgap="12.0" vgap="12.0">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" minWidth="120.0"/>
+                        <ColumnConstraints minWidth="260.0"/>
+                    </columnConstraints>
+                    <children>
+                        <Label text="Email:" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="auth-label"/>
+                        <TextField fx:id="emailField" promptText="you@example.com"
+                                   GridPane.rowIndex="0" GridPane.columnIndex="1" styleClass="auth-field"/>
+
+                        <Label text="Password:" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="auth-label"/>
+                        <PasswordField fx:id="passField" promptText="Your password"
+                                       GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="auth-field"/>
+                    </children>
+                </GridPane>
+
+                <Label fx:id="errorLabel" visible="false"
+                       wrapText="true" maxWidth="380.0" styleClass="error-label"/>
+
+                <HBox spacing="12.0" alignment="CENTER">
+                    <children>
+                        <Button text="Login" prefWidth="120.0"
+                                defaultButton="true" onAction="#handleLogin" styleClass="auth-button"/>
+                        <Button text="Create Account" prefWidth="120.0"
+                                onAction="#goSignup" styleClass="auth-button"/>
+                    </children>
+                </HBox>
+            </children>
+            <padding><Insets top="24.0" right="24.0" bottom="24.0" left="24.0"/></padding>
+        </VBox>
+    </children>
+</AnchorPane>
