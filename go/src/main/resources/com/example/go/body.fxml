@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="dashboard-container" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.go.GameInterfaceController">
+    <children>
+        <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#logout" styleClass="logout-button" text="LOGOUT" />
+        <Button layoutX="196.0" layoutY="119.0" mnemonicParsing="false" styleClass="game-button" text="tic tac toe" />
+        <Button layoutX="381.0" layoutY="227.0" mnemonicParsing="false" styleClass="game-button" text="COMING SOON" />
+        <Button layoutX="393.0" layoutY="119.0" mnemonicParsing="false" styleClass="game-button" text="ship cabin crew" />
+      <Button layoutX="196.0" layoutY="227.0" mnemonicParsing="false" onAction="#openHangman" styleClass="game-button" text="hangman" />
+        <Label layoutX="216.0" layoutY="14.0" prefHeight="36.0" prefWidth="150.0" styleClass="dashboard-title" text="DJANGO" />
+        <TextField layoutX="467.0" layoutY="361.0" prefHeight="36.0" prefWidth="121.0" styleClass="text-field" text="Team ParboNa" />
+        <Label layoutX="14.0" layoutY="6.0" prefHeight="18.0" prefWidth="116.0" styleClass="user-info" text="user name" />
+        <Label layoutX="420.0" layoutY="23.0" styleClass="coin-info" text="coin" />
+        <ChoiceBox layoutX="3.0" layoutY="92.0" prefHeight="137.0" prefWidth="150.0" styleClass="choice-box" />
+        <Button layoutX="13.0" layoutY="106.0" mnemonicParsing="false" styleClass="sidebar-button" text="LOCKER" />
+        <Button layoutX="18.0" layoutY="142.0" mnemonicParsing="false" styleClass="sidebar-button" text="SHOP" />
+        <Button layoutX="9.0" layoutY="187.0" mnemonicParsing="false" styleClass="sidebar-button" text="SETTINGS" />
+        <Button layoutX="17.0" layoutY="253.0" mnemonicParsing="false" styleClass="sidebar-button" text="FRIENDS" />
+        <ProgressBar layoutX="467.0" layoutY="23.0" prefHeight="18.0" prefWidth="101.0" progress="0.0" styleClass="progress-bar" />
+    </children>
+</AnchorPane>

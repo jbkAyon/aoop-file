@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" focusTraversable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="391.0" prefWidth="562.0" spacing="20.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.go.HelloController" stylesheets="@styles.css" styleClass="splash-container">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label alignment="CENTER" text="DJANGO" textOverrun="CENTER_ELLIPSIS" styleClass="splash-title">
+        </Label>
+        <Label fx:id="labelprogressbar" prefHeight="18.0" prefWidth="93.0" styleClass="info-label" />
+        <ProgressBar fx:id="progressbar" prefHeight="20.0" prefWidth="555.0" progress="0.0" styleClass="progress-bar" />
+        <Label prefHeight="24.0" prefWidth="126.0" text="           Powered By   " styleClass="splash-subtitle">
+        </Label>
+        <Label text="Team ParboNa" styleClass="splash-subtitle">
+        </Label>
+    </children>
+    <effect>
+        <DropShadow />
+    </effect>
+
+
+</VBox>

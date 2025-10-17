@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefWidth="600.0" prefHeight="420.0"
+            xmlns="http://javafx.com/javafx/17.0.2"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.go.SignupController" stylesheets="@styles.css" styleClass="auth-container">
+    <children>
+        <VBox spacing="16.0" alignment="CENTER"
+              prefWidth="600.0" prefHeight="420.0" styleClass="auth-panel">
+            <children>
+                <Label text="Create Account" styleClass="auth-title">
+                </Label>
+
+                <GridPane hgap="12.0" vgap="12.0">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" minWidth="120.0"/>
+                        <ColumnConstraints minWidth="260.0"/>
+                    </columnConstraints>
+                    <children>
+                        <Label text="Name:" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="auth-label"/>
+                        <TextField fx:id="nameField" promptText="Full name"
+                                   GridPane.rowIndex="0" GridPane.columnIndex="1" styleClass="auth-field"/>
+
+                        <Label text="Email:" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="auth-label"/>
+                        <TextField fx:id="emailField" promptText="you@example.com"
+                                   GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="auth-field"/>
+
+                        <Label text="Password:" GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="auth-label"/>
+                        <PasswordField fx:id="passField" promptText="At least 8 characters"
+                                       GridPane.rowIndex="2" GridPane.columnIndex="1" styleClass="auth-field"/>
+
+                        <Label text="Confirm:" GridPane.rowIndex="3" GridPane.columnIndex="0" styleClass="auth-label"/>
+                        <PasswordField fx:id="confirmField" promptText="Re-type password"
+                                       GridPane.rowIndex="3" GridPane.columnIndex="1" styleClass="auth-field"/>
+                    </children>
+                </GridPane>
+
+                <Label fx:id="errorLabel" visible="false"
+                       wrapText="true" maxWidth="380.0" styleClass="error-label"/>
+
+                <HBox spacing="12.0" alignment="CENTER">
+                    <children>
+                        <Button text="Sign Up" prefWidth="120.0"
+                                defaultButton="true" onAction="#handleSignup" styleClass="auth-button"/>
+                        <Button text="Back to Login" prefWidth="120.0"
+                                cancelButton="true" onAction="#goLogin" styleClass="auth-button"/>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets top="24.0" right="24.0" bottom="24.0" left="24.0"/>
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>
